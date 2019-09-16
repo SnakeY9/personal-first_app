@@ -1,0 +1,16 @@
+<div class="row" style="padding-top: 50px;">
+<div class="col s12 m6 offset-m3">
+  <h1>
+    Editing tweet
+  </h1>
+  <%= form_with url: tweet_path, method: :patch, lacal: true do |form| %>
+    <div class="field">
+      <label for="tweet_text">Text</label>
+      <%= form.text_area :text %>
+    </div>      
+    <div class="actions">
+      <%= form.submit :commit %>
+    </div>
+  <% end %>
+</div>
+</div>
